@@ -1,0 +1,144 @@
+* {
+	transition: all 0.5s ease-in-out;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.menuHud {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/* general HUD */
+.menuHud > div {
+	background: #828282;
+	width: 10vw;
+	min-width: 180px;
+	border-radius: 16px;
+	padding: 8px;
+}
+
+.menuHud .container {
+	background: #f7f9fa;
+
+	padding: 16px;
+	margin: 10px;
+
+	border-radius: 16px;
+}
+
+.container .title {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 1000;
+	font-size: 1.2em;
+	/* identical to box height, or 140% */
+
+	align-items: center;
+	/*letter-spacing: 0.15px;*/
+
+	/* Dark Color */
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.container .value {
+	margin-top: 10px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3em;
+}
+
+/* points specific HUD */
+.menuHud > #pointsHud {
+	border-radius: 0px 0px 16px 0px;
+}
+
+#kelompokId {
+	color: #2fbdea;
+}
+
+#currentPoints {
+	color: #ea3d2f;
+}
+
+#pointsDelta {
+	color: #7c4dff;
+}
+
+/* tile info specific HUD */
+.menuHud > #informationHud {
+	border-radius: 0px 0px 0px 16px;
+	min-width: 300px;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+#tileInfo {
+	font-size: 1em;
+}
+
+/* purchase HUD */
+.menuHud > #purchaseHud {
+	margin-top: 10px;
+	border-radius: 0 16px 16px 0;
+}
+
+.purchasableContainer {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	justify-content: space-evenly;
+
+	grid-template-columns: auto auto;
+
+	text-align: center;
+	font-family: Roboto;
+	font-weight: 700;
+}
+
+.purchasableContainer .image {
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.purchasableContainer .name {
+	font-family: Quicksand;
+	font-style: normal;
+	font-weight: 500;
+	color: black;
+}
+
+.purchasableContainer .price {
+	color: #ea3d2f;
+}
+
+.purchasableContainer .profit {
+	color: #7c4dff;
+}
+
+/* icons */
+.sd-icon {
+	background: url("../img/building/sd.svg");
+}
+
+.smp-icon {
+	background: url("../img/building/smp.svg");
+}
+
+.sma-icon {
+	background: url("../img/building/sma.svg");
+}
+
+.road-icon {
+	background: url("../img/building/road.svg");
+}
